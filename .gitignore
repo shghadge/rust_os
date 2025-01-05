@@ -1,25 +1,37 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Build artifacts
+/target/
 
-# Test binary, built with `go test -c`
-*.test
+# Dependency directory
+/Cargo.lock
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Rust's compilation cache
+/.cargo/
+
+# Editor specific files
+.idea/
+/.vscode/
+/*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.aux
 *.out
+*.toc
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Coverage reports (for example, when using tarpaulin or other coverage tools)
+/target/coverage/
 
-# Go workspace file
-go.work
-go.work.sum
+# Rust test and coverage files (when using certain tools)
+/target/debug/
+/target/release/
 
-# env file
-.env
+# Rust documentation build files
+/doc/
+
+# If you're using any of the following, add to the gitignore as necessary:
+# .env (environment variable files, for example, when using dotenv)
+# .envrc
