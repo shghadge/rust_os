@@ -1,6 +1,4 @@
 # rust_os
 
-**To build this binary, we need to compile for a bare metal target such as thumbv7em-none-eabihf:**
-```cargo build --target thumbv7em-none-eabihf```
+A small operating system written in Rust, following the <a href="https://os.phil-opp.com/" target="_blank">Writing an OS in Rust</a> blog
 
-**For any real use of such a binary, more steps are required.**
